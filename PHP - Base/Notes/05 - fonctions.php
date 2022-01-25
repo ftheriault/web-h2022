@@ -2,6 +2,7 @@
 	function hasher($mot, $salt = "asdf") {
 		$result = "";
 
+		// md5
 		$result = sha1($mot . $salt);
 
 		return $result;
