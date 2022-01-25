@@ -1,0 +1,107 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+html, body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:18px;
+    background-image:url('../images/site-background.jpg');
+    background-size: cover;
+    background-position: bottom center;
+}
+
+canvas {
+    border:1px solid black;
+}
+
+h1 {
+    border-bottom:1px solid white;
+    margin-bottom:10px;
+}
+
+.container {    
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    position: relative;
+}
+
+.results-container {
+    background-color: #6a6;
+    height:576px;
+    flex-basis: 960px;
+    box-sizing: border-box;
+    padding: 10px;
+    color: white;
+    font-size: 1.2em;
+    overflow:auto;
+}
+
+.results-container div {
+    margin-bottom:10px;
+}
+
+.save-form-section {
+    position: absolute;
+    bottom:20px;
+    width:100%;
+    text-align: center;
+    /* display:none; */
+}
+
+.save-form-section button {
+    background-image: url('../images/button.png');
+    border:0;
+    background-color: transparent;
+    text-align: center;
+    width: 249px;
+    height:69px;
+    color:white;
+    font-size:1.2em;
+    cursor: pointer;
+}
+
+header {
+    position: absolute;
+    top:0;
+    width:90vw;
+    height:50px;
+    background-color:#6a6;
+    border-bottom:2px solid #666;
+    padding:10px 5vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    height:100%;
+    align-items: center;
+}
+
+ul li {
+    padding-left:20px;
+}
+
+ul li:before {
+    content: "[ ";
+    color:white;
+}
+
+ul li:after {
+    content: " ]";
+    color:white;
+}
+
+a {
+    font-size:20px;
+    color:white;
+    text-decoration: none;
+    font-weight: 600;
+}

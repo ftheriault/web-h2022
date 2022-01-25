@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+}
+
+html, body {
+    background-color: black;
+    font-family: 'Raleway', sans-serif;
+    color:white;
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    margin-bottom:15px;
+}
+
+a {
+    color:white;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#888;
+}
+
+a.selected {
+    font-weight: bold;
+}
+
+header {
+    background-color: #0e1d34;
+    padding:10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+}
+
+h1 {
+    border-bottom: 2px solid white;
+    margin-bottom:10px;
+}
+
+header ul li {
+    list-style-type: none;
+    margin-right:30px;
+}
+
+footer {
+    text-align: center;
+    margin-bottom:10px;
+}
+
+.title {
+    font-size: 1.5em;
+}
+
+.container {
+    width:1000px;
+    margin:50px auto;
+    text-align: justify;
+    flex-grow: 1;
+}
+
+.course-list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.course-list > div {
+    margin:10px;
+}
+
+.course-list .img-container {
+    height: 250px;
+    margin-top:20px;
+}
+
+.register-section {
+    background-image: url('../img/book.jpg');
+    background-size: contain;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    padding-right:500px;
+    min-height: 400px;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+input, select, textarea {
+    font-size: 16px;
+    padding:3px;
+    width:100%;
+    display: block;
+    box-sizing: border-box;
+}
+
+textarea {
+    height:100px;
+}
+
+button {
+    border-width: 1px;
+    background-color: #0e1d34;
+    color:white;
+    border-radius: 4px;
+    padding:10px 20px;
+    font-size: 16px;
+}
