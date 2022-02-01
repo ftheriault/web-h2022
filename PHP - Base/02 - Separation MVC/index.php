@@ -1,15 +1,32 @@
+<?php
+	require_once("action/indexAction.php");
+
+	$data = execute();
+	// $data = un dictionnaire
+	// ex: $data["username"]
+	//     $data["message"]
+?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>VÈrification</title>
+        <title>V√©rification</title>
         <link href="css/global.css" rel="stylesheet"/>
     </head>
     <body>
 		<div class="sectionAuthentification">
 			<h1>
-				Authentification nÈcessaire
+				Authentification n√©cessaire ( <?= $data["version"] ?> )
 			</h1>
-			<form action="http://www.perdu.com" method="post">
+			<?php
+				if ($data["hasConnectionError"]) {
+					?>
+					<div style="color:red;border:1px solid red">
+						Connexion erron√©e !
+					</div>
+					<?php
+				}
+			?>
+			<form action="" method="post">
 				<div class="formLabel"><label for="courriel"> Courriel : </label></div>
 				<div class="formInput"><input type="text" name="champCourriel" /></div>
 				<div class="formSeparator"></div>
