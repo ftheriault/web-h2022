@@ -51,7 +51,7 @@ h1 {
     bottom:20px;
     width:100%;
     text-align: center;
-    /* display:none; */
+    display:none;
 }
 
 .save-form-section button {

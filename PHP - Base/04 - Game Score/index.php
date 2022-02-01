@@ -27,6 +27,7 @@
 
                 <div class="save-form-section">
                     <form action="" method="post">
+                        <input type="hidden" name="pointage" id="pointage">
                         <button>Enregistrer</button>
                     </form>
                 </div>
