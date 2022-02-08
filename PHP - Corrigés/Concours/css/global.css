@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+}
+
+html,body {
+    background-image: url('../images/hotel.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    color:white;
+    font-size: 20px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    border-bottom:1px solid white;
+}
+
+a {
+    color:white;
+    text-decoration: underline;
+}
+
+input,select {
+    font-size: 25px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    display: block;
+    max-width: 100%;
+    margin:10px 0;
+    color:black;
+    border-radius: 4px;
+    padding:10px;
+    width: 100%;
+}
+
+input {
+    width: calc(100% - 25px);
+}
+
+button {
+    background-color: white;
+    border:0;
+    color:black;
+    padding:10px;
+    font-size: 20px;
+    width: 100%;
+}
+
+.success-message {
+    color:green;
+    background-color: white;
+    border:1px solid green;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.error-message {
+    color:red;
+    background-color: pink;
+    border:1px solid red;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.data-line {
+    margin-top:10px;
+    text-align: center;
+}
+
+.half-width {
+    width: 50%;
+    margin:0 auto;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    padding-top:5vh;
+}
+
+.box {
+    min-width: 300px;
+    max-width: 600px;
+    width: 100%;
+    padding:10px;
+    border:1px solid #aaa;
+    background-color:rgba(255, 255, 255, 0.4);
+}
