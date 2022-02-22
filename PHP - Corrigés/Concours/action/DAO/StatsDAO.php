@@ -29,7 +29,7 @@
             foreach ($lines as $line) {
                 if (!empty($line)) {
                     $cols = explode(";", $line);
-                    $result[$cols[1]]++;
+                    $result[trim($cols[1])]++;
                 }
             }
 
