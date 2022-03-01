@@ -1,0 +1,147 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+html {
+	color:#492a27;
+	background-image:url('../images/gradient-2.jpg');
+	background-repeat:repeat-x;
+	background-position:bottom center;
+	background-color:#d1d1d1;
+}
+
+body {
+	font-family:Verdana;
+	background-image:url('../images/gradient.jpg');
+	background-repeat:repeat-x;
+	background-position:top center;
+}
+
+h1 {
+	font-size: 1.3em;
+	text-shadow:2px 2px 5px #aaa;
+	margin-bottom: 25px;
+}
+
+p {
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+a {
+	text-decoration:none;
+	color:white;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+.clear {
+	clear:both;
+}
+
+.container {
+	background-color:white;
+	width:930px;
+	min-height:350px;
+	margin:5px auto;
+	border:1px solid #6b5736;
+	padding:15px;
+	background-image:url('../images/coffee-grain.jpg');
+	background-repeat:no-repeat;
+	background-position:bottom right;
+	box-shadow: 0 0 15px #000;
+	border-radius: 3px;
+}
+
+.header {
+	width:940px;
+	margin:0px auto;
+	margin-bottom:5px;
+	color:white;
+	padding:10px;
+	padding-bottom:3px;
+}
+
+.header h2 {
+	text-indent:-1000px;
+	background-image:url('../images/logo.png');
+	background-position:top left;
+	background-repeat:no-repeat;
+	height: 55px;
+}
+
+.header .menu {
+	margin-top:20px;
+	text-align:right;
+}
+
+.header .menu ul li {
+	display:inline;
+	padding-right:15px;
+}
+
+.header .username-section {
+	float:right;
+	width:240px;
+	font-style:italic;
+	text-align:right;
+}
+
+.header .site-title-section {
+	float:left;
+	width:700px;
+}
+
+.form-label {
+	float:left;
+	width:150px;
+}
+
+.form-input {
+	float:left;
+	width: 150px;
+}
+
+.form-separator {
+	clear: both;
+	height:10px;
+}
+
+.error-div {
+	border: 1px solid red;
+	padding:5px;
+	border-radius: 3px;
+	background-color: pink;
+	margin-bottom: 20px;
+	color:red;
+}
+
+.login-form-frame {
+	margin: 20px auto;
+	width:310px;
+	border-radius: 3px;
+	border:1px solid #6b5736;
+	background-color: #ddd;
+	padding:20px;
+	background: linear-gradient(white, #d1d1d1); 
+}
+
+button {
+	box-shadow:rgba(0,0,0,1) 0 0px 2px 0;
+	color:#333;
+	background-color:#d1d1d1;
+	border-radius:3px;
+	border:none;
+	font-size:16px;
+	font-weight:700;
+	height:32px;
+	padding:4px 16px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color:#bbb;
+}
