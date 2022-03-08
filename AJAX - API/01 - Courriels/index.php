@@ -11,9 +11,29 @@
 			<meta charset="utf-8">
 			<link rel="stylesheet" href="css/global.css">
 			<script>
+				// En 3 temps,
+				// D'abord le fetch, quand le retour est arrivé,
+				// Faire le premier then, qui décode le JSON, quand c'est terminé
+				// Faire le dernier then, qui fait notre logique finale
+
+				// N'oubliez pas l'onget "Network" de Google Chrome, très pratique pour déboguer
 				const checkEmails = () => {
-							
-				}		
+					let formData = new FormData();
+					formData.append("username", "ken"); // <input type="text" name="username" value="ken">
+					formData.append("password", "AAAaaa111");
+
+					fetch("ajax.php", {
+						method : "POST", // Comme si on fait une balise <form method="post">
+						body : formData
+					})
+					.then(response => response.json())
+					.then(data => {
+						document.querySelector("#contenantCourriels").innerHTML = data;
+						console.log(data);
+					})
+
+					console.log("En premier");
+				}	
 			</script>
 	</head>
 	<body>
