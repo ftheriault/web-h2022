@@ -8,7 +8,10 @@
         }
 
         protected function executeAction() {
-            $result = sha1($_POST["chuck"]);            
+            $result = [];
+            $result["data"] = sha1($_POST["chuck"]);   
+            $result["original"] = $_POST["chuck"];
+
             return compact("result");
         }
     }

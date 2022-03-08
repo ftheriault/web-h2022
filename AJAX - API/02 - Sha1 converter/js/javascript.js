@@ -11,10 +11,12 @@ window.addEventListener("load", () => {
         })
         .then(res => res.json())
         .then(res => {
-            let parent = document.querySelector("#result");
-            let node = document.createElement("div");
-            node.innerText = res;
-            parent.append(node);
+            if (res.data.length < 50) {
+                let parent = document.querySelector("#result");
+                // let node = document.createElement("div");
+                parent.innerText = res.data;
+                // parent.append(node);
+            }
         });
     }
     
