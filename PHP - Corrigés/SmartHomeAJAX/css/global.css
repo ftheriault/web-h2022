@@ -1,0 +1,121 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+p {
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+li ul {
+    padding-left: 20px;
+}
+
+ol {
+    border-top:1px solid #aaa;
+    padding-top: 5px;
+}
+
+ol li,
+ul li {
+    list-style-position: inside;
+}
+
+ol > li {
+    margin-bottom:10px;
+}
+
+body {
+    background-color: black;
+    background-image: url('../img/cloud.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+body > div {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+main {
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#house {
+    margin:0 auto;
+    width:800px;
+    height:526px;
+    background-image:url('../img/house.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+#house img {
+    position: absolute;
+    width:170px;
+    z-index:-1;
+}
+
+#light1 {
+    top:185px;
+    left:60px;
+}
+
+#light2 {
+    top:185px;
+    left:260px;
+}
+
+#light3 {
+    top:185px;
+    left:440px;
+}
+
+#light4 {
+    top:330px;
+    left:90px;
+}
+
+#light5 {
+    top:330px;
+    left:270px;
+}
+
+#light6 {
+    top:330px;
+    left:500px;
+}
+
+.btn-refresh {
+    height:8vh;
+}
+
+@keyframes rotate {
+    0%      {transform: rotate(0deg);}
+    100%    {transform: rotate(360deg);}
+}
+
+.btn-refresh:hover {
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.refresh-section {
+    flex:1;
+    text-align: center;
+}
+
+.steps-section {
+    flex:5;
+}
