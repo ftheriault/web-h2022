@@ -30,6 +30,7 @@
 					.then(data => {
 						document.querySelector("#contenantCourriels").innerHTML = data;
 						console.log(data);
+						setTimeout(checkEmails, 2000);
 					})
 
 					console.log("En premier");
