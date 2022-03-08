@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background-image: url('../images/background.png');
+}
+
+h1 {
+	margin-bottom:30px;
+}
+
+.container {
+	background-color: white;
+	width:600px;
+	margin:50px auto;
+	text-align:center;
+	border:3px solid black;
+	border-radius: 300px;
+	padding:30px;
+}
+
+.refresh-section {
+	margin-top:50px;
+}
+
+#contenantCourriels {
+	font-size: 100px;
+	text-shadow: 0 0 10px black;
+	color:blue;
+}
+
+button {
+ 	border:0;
+ 	background:none;
+ 	cursor:pointer;
+	border-radius:100px;
+
+	transition: background-color 2s;
+}
+
+button:hover {
+	background-color:#ddd;
+}
